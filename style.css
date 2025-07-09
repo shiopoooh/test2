@@ -1,0 +1,181 @@
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  object-fit: cover;
+  z-index: -1;
+  pointer-events: none;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 9999;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#preloader video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+body {
+  margin: 0;
+  font-family: "Darumadrop One", sans-serif;
+  background: url("img/Clouds-and-checks_green.mp4") no-repeat center center fixed;
+  background-size: cover;
+}
+
+header {
+  text-align: right;
+  position: relative;
+  background: #f5fff9aa;
+  color: #46c617c8;
+  padding: 10px 20px;
+}
+
+.hamburger {
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.menu {
+  position: absolute;
+  top: 50px;
+  right: 0;
+  width: 400px;
+  height: 100vh;
+  background: #abee40;
+  display: none;
+  overflow-y: auto;
+}
+
+.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  border-top: 1px solid #ffffff;
+}
+
+.menu li a {
+  display: block;
+  padding: 15px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.menu li a:hover {
+  background: #047d24;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;        
+  padding: 20px 50px;
+}
+
+.grid div {
+  background: hsl(137, 64%, 79%);
+  height: 230px;
+  width: 230px;
+  border-radius: 20px;
+  aspect-ratio: 1/1;
+}
+
+
+.section-title {
+  background: #b2e3a3;
+  height: 50px;
+  margin: 20px;
+  text-align: left;
+  line-height: 50px;
+  font-weight: bold;
+  font-family: "Darumadrop One", sans-serif;
+  font-size: 2rem;
+}
+
+.button {
+  width: 230px;
+  height: 230px;
+  border: none;
+  background: none;
+  cursor: pointer; /* マウスを乗せると手の形に */
+}
+
+.img{
+  height: 100px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.img2{
+  height: 230px;
+  width: 230px;
+  border-radius: 20px;
+  object-fit: cover;
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.img3{
+  height: 160px;
+  width: 180px;
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.img_sakuhin {
+  display: flex;
+  justify-content: center; /* 横方向中央 */
+  align-items: center;     /* 縦方向中央（必要なら） */
+  margin: 20px auto;       /* ブロック要素を中央にする */
+  height: 80%;
+  text-align: center;
+  font-weight: bold;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+.img-profile {
+  height: 100%;
+  width: 100%;
+}
+
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+footer {
+  text-align: center;
+  margin: 10px 0;    
+}
+
+footer button {
+  background: #06a330; /* プロフィールボタンの色を指定 */
+  border: none;
+  padding: 10px 40px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  color: #000000;         /* 文字色を黒に */
+}
